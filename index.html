@@ -1,55 +1,79 @@
 <!DOCTYPE html> <!-- <> is known as tag and has to be closed with </> -->
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sample HTML Page</title>
 </head>
 <body>
   <header>
     <h1>Welcome to My Web Page</h1>
-    <nav>
-      <a href="#home">Home</a> |
-      <a href="#about">About</a> |
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
+ <img src="images/logo.png" alt="Logo" width="100">
+
+  <form>
+    <input type="text" id="Search" placeholder="Search..."> <button type="submit">Search</button><br><br> 
+
+  </form>
+
+  <nav>
+    <ul> <!-- ul is unordered list --> <!-- ol is ordered list -->
+      <li><a href="#home"> Home </a> </li> <!-- li is list item -->
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <section id="home">
       <h2>Home</h2>
       <p>This is a simple sample HTML file.</p>
-      <img src="https://via.placeholder.com/300" alt="Placeholder image">
-    </section>
 
-    <section id="about">
       <h2>About Me</h2>
       <p> Second-year Bachelor in Information Technology (BIT) student with strong academic performance and hands-on
       experience in project facilitation, event management, volunteering, and public relations. Motivated to further
       develop technical, leadership, and professional skills.</p>
-    </section>
+      <img src="images/profile.jpg" alt="Logo" width="200">
 
-    <section id="My Projects">
       <h2>My Projects</h2>
       <ul>
         <li>Project 1: Description of project 1.</li>
         <li>Project 2: Description of project 2.</li>
         <li>Project 3: Description of project 3.</li>
       </ul>
-    </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+      <h2>Contact Me</h2>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br> <!-- br is line break -->
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <h2>Find Me On</h2>
+    <a href="https://www.facebook.com/Itsmepranavshresth/">
+      <img src="D:\UG Second Year\CSE 230\Html project\test\images\facebook.png" alt="Logo" width="35">
+    </a>
+    <a href="https://www.instagram.com/pranavv.sh/">
+      <img src="D:\UG Second Year\CSE 230\Html project\test\images\instagram.png" alt="Logo" width="30">
+    </a>
+    <a href="https://www.gmail.com">
+      <img src="D:\UG Second Year\CSE 230\Html project\test\images\gmail.png" alt="Logo" width="30">
+    </a>
+    <a href="https://www.linkedin.com/in/pranav-shrestha-a11aa430b/">
+      <img src="D:\UG Second Year\CSE 230\Html project\test\images\linkedin.png" alt="Logo" width="30">
+    </a>
   </main>
 
   <footer>
-    <p>&copy; 2026 Pranav Shrestha</p>
+    <p>&copy; All Rights Reserved 2026.</p>
   </footer>
 </body>
 </html>
