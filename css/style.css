@@ -161,10 +161,10 @@ article a:hover{
 }
 
 .skills-container {
-    background-color: #f4ecce;
-    border-radius: 12px;
-    padding: 1.5rem 1.8rem 1.2rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff8dc;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px black;
 }
 
 .skills-container h2 {
