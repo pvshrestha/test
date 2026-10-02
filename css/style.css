@@ -268,17 +268,59 @@ article a:hover{
     word-break: break-word;
 }
 
+footer {
+    margin-top: 20px;
+    padding: 24px 20px;
+    background-color: #a52a2a;
+    color: #fff8dc;
+    text-align: center;
+    border-top: 4px solid #4a2630;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
 
 
 @media (max-width: 768px) {
+    main {
+        padding: 0 12px;
+    }
+
     .header-container {
         flex-direction: column;
         align-items: center;
     }
-    
-    nav ul {
+
+    .logo-container,
+    .nav-container,
+    .search-bar-container {
+        width: 100%;
+    }
+
+    .nav-container nav ul {
         flex-direction: column;
         gap: 12px;
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+    .search-form input {
+        min-width: 0;
+    }
+
+    .about-container,
+    .skills-container,
+    .projects-container,
+    .contact-container,
+    .find-me-on-container,
+    .education-container {
+        padding: 1rem;
     }
 
     .about-container {
@@ -289,6 +331,23 @@ article a:hover{
     .about-container img {
         width: 100%;
         max-width: 300px;
+    }
+
+    .skill-row {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+    }
+
+    .skills-container dd {
+        padding: 0.75rem;
+    }
+
+    .education-container {
+        overflow-x: auto;
+    }
+
+    .education-container table {
+        min-width: 620px;
     }
 }
 
@@ -301,7 +360,7 @@ article a:hover{
     }
 
     nav ul{
-        gap: 1 rem;
+        gap: 1rem;
     }
 
     .about-container {
